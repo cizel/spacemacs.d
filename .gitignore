@@ -1,3 +1,4 @@
 .DS_Store
 /.spacemacs.env
 *.elc
+#init.el#
