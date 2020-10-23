@@ -1,0 +1,21 @@
+* Cizel Spacemacs Config
+
+** TODO
+   - [ ] review git layer
+   - [ ] review org layer
+   - [ ] review emacs-lisp layer
+
+** Layer Keymaps
+
+*** emoji 
+
+| keymaps   | description  |
+| ---       | ---          |
+| `SPC i e` | insert emoji |
+
+** My Editor Workflow
+
+| 操作             | 快捷键     |
+| ---              | ---        |
+| 当前目录创建文件 | `<SPC> ff` |
+

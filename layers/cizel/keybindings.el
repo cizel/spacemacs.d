@@ -1,4 +1,4 @@
-;;; packages.el --- cizelayer-org layer packages file for Spacemacs.
+;;; keybindings.el --- cizel layer packages file for Spacemacs.
 ;;
 ;; Copyright (c) 2012-2020 Sylvain Benner & Contributors
 ;;
@@ -9,9 +9,8 @@
 ;;
 ;;; License: GPLv3
 
-(defconst cizelayer-org-packages
-  '()
-  )
+(global-set-key (kbd "C-c a") 'org-agenda)
+(define-key global-map (kbd "C-c t") 'org-capture)
 
 
-;;; packages.el ends here
+;;; keybindings.el ends here

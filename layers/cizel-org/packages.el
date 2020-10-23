@@ -1,4 +1,4 @@
-;;; funcs.el --- cizelayer-ui layer packages file for Spacemacs.
+;;; packages.el --- cizel-org layer packages file for Spacemacs.
 ;;
 ;; Copyright (c) 2012-2020 Sylvain Benner & Contributors
 ;;
@@ -9,6 +9,9 @@
 ;;
 ;;; License: GPLv3
 
+(defconst cizel-org-packages
+  '()
+  )
 
-;;; funcs.el ends here
 
+;;; packages.el ends here

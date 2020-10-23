@@ -1,4 +1,4 @@
-;;; packages.el --- cizelayer-misc layer packages file for Spacemacs.
+;;; config.el --- cizel layer packages file for Spacemacs.
 ;;
 ;; Copyright (c) 2012-2020 Sylvain Benner & Contributors
 ;;
@@ -9,8 +9,6 @@
 ;;
 ;;; License: GPLv3
 
-(defconst cizelayer-misc-packages
-  '()
-  )
 
-;;; packages.el ends here
+;;; config.el ends here
+

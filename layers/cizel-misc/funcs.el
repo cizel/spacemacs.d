@@ -1,4 +1,4 @@
-;;; funcs.el --- cizelayer-misc layer packages file for Spacemacs.
+;;; funcs.el --- cizel-misc layer packages file for Spacemacs.
 ;;
 ;; Copyright (c) 2012-2020 Sylvain Benner & Contributors
 ;;
@@ -31,9 +31,7 @@
                             "set the_file to open for access (POSIX file the_path as string) with write permission \n"
                             "write png_data to the_file \n"
                             "close access the_file"))
-        ;; (shell-command (concat "pngpaste " image-file))
         (insert (format "![](./%s%s)" relative-path relative-image-file))
-        (message image-file))
-    )
+        (message image-file)))
 
 ;;; funcs.el ends here

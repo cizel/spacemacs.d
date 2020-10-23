@@ -1,4 +1,4 @@
-;;; config.el --- cizelayer-ui layer packages file for Spacemacs.
+;;; config.el --- cizel-defaults layer packages file for Spacemacs.
 ;;
 ;; Copyright (c) 2012-2020 Sylvain Benner & Contributors
 ;;
@@ -8,6 +8,11 @@
 ;; This file is not part of GNU Emacs.
 ;;
 ;;; License: GPLv3
+
+;; Setting ingnore dired-user-ls-dired
+(when (spacemacs/system-is-mac)
+    (setq dired-use-ls-dired nil)
+    )
 
 ;; Setting doom-modeline
 (setq doom-modeline-buffer-file-name-style 'buffer-name)

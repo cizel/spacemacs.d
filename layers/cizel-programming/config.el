@@ -1,4 +1,4 @@
-;;; config.el --- cizelayer-programming layer packages file for Spacemacs.
+;;; config.el --- cizel-programming layer packages file for Spacemacs.
 ;;
 ;; Copyright (c) 2012-2020 Sylvain Benner & Contributors
 ;;

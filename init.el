@@ -71,7 +71,8 @@ This function should only modify configuration layer settings."
              lua
              php
              (java :variables java-backend 'lsp)
-             cizelayer
+             ;; personal
+             cizel
              )
 
         ;; List of additional packages that will be installed without being
@@ -107,8 +108,7 @@ This function should only modify configuration layer settings."
              helm-c-yasnippet ace-jump-helm-line helm-make magithub
              helm-themes helm-swoop helm-spacemacs-help smeargle
              ido-vertical-mode flx-ido company-quickhelp ivy-rich helm-purpose pyim
-             lsp-ui meghanada
-             drupal-mode eldoc php-auto-yasnippets php-extras phpunit phpactor company-phpactor geben
+             meghanada drupal-mode php-auto-yasnippets php-extras phpunit mmm-mode
              )
 
         ;; Defines the behaviour of Spacemacs when installing packages.
@@ -503,10 +503,10 @@ If you are unsure, try setting them in `dotspacemacs/user-config' first."
 
     (setq byte-compile-warnings '(cl-functions))
 
-    (setq url-proxy-services
-        '(("no_proxy" . "^\\(localhost\\|10\\..*\\|192\\.168\\..*\\)")
-             ("http" . "127.0.0.1:1087")
-             ("https" . "127.0.0.1:1087")))
+    ;;(setq url-proxy-services
+    ;;    '(("no_proxy" . "^\\(localhost\\|10\\..*\\|192\\.168\\..*\\)")
+    ;;         ("http" . "127.0.0.1:1087")
+    ;;         ("https" . "127.0.0.1:1087")))
 
     ;;custom.el
     (setq custom-file (expand-file-name "custom.el" dotspacemacs-directory))
