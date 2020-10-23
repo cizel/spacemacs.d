@@ -107,9 +107,8 @@ This function should only modify configuration layer settings."
              helm-c-yasnippet ace-jump-helm-line helm-make magithub
              helm-themes helm-swoop helm-spacemacs-help smeargle
              ido-vertical-mode flx-ido company-quickhelp ivy-rich helm-purpose pyim
-             lsp-ui helm-gtags meghanada
+             lsp-ui meghanada
              drupal-mode eldoc php-auto-yasnippets php-extras phpunit phpactor company-phpactor geben
-
              )
 
         ;; Defines the behaviour of Spacemacs when installing packages.
@@ -528,28 +527,6 @@ This function is called at the very end of Spacemacs startup, after layer
 configuration.
 Put your configuration code here, except for variables that should be set
 before packages are loaded."
-
-    ;;plugin::lsp-mode
-    (setq lsp-modeline-code-actions-enable nil)
-
-    ;;plugin::lsp-ui
-    (setq lsp-ui-sideline-show-code-actions nil)
-
-    ;;plugin::lsp-java
-    (setq path-to-lombok
-        (expand-file-name
-            "~/.m2/repository/org/projectlombok/lombok/1.18.12/lombok-1.18.12.jar"
-            )
-        )
-    (setq lsp-java-vmargs
-        `(
-             "-Xmx4G"
-
-             "-XX:+UseStringDeduplication"
-             "-noverify"
-             ,(concat "-javaagent:" path-to-lombok)
-             )
-        )
     )
 
 ;; Do not write anything past this comment. This is where Emacs will

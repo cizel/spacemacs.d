@@ -9,6 +9,9 @@
 ;;
 ;;; License: GPLv3
 
+(when (spacemacs/system-is-mac)
+    (setq dired-use-ls-dired nil)
+    )
 
 ;;; config.el ends here
 
