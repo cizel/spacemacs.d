@@ -501,9 +501,8 @@ If you are unsure, try setting them in `dotspacemacs/user-config' first."
              ("org-cn"   . "http://elpa.emacs-china.org/org/")
              ("gnu-cn"   . "http://elpa.emacs-china.org/gnu/")))
 
-    (setq byte-compile-warnings '(cl-functions))
-
     (when (spacemacs/system-is-mac)
+        (setq byte-compile-warnings '(cl-functions))
         (setq dired-use-ls-dired nil)
         )
 

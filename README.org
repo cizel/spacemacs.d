@@ -1,19 +1,19 @@
 * Cizel Spacemacs Config
 
 ** TODOs
-   - [ ] review git layer
-   - [ ] review org layer
-   - [ ] review emacs-lisp layer
+   - review git layer
+   - review org layer
+   - review emacs-lisp layer
 
 ** My Editor Workflow
 
 *** Emoji 
     
     | 操作       | 快捷键    |
-    | 插入 emoji | `SPC i e` |
+    | 插入 emoji | =SPC i e= |
 
 *** Files
     
    | 操作             | 快捷键     |
-   | 当前目录创建文件 | `<SPC> ff` |
+   | 当前目录创建文件 | =<SPC> ff= |
 

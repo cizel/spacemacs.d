@@ -12,9 +12,7 @@
 (defconst cizel-ui-packages
     '(
          doom-modeline
-         (valign :location (recipe
-                               :fetcher github
-                               :repo "casouri/valign"))
+         (valign :location (recipe :fetcher github :repo "casouri/valign"))
          )
     )
 
@@ -22,8 +20,8 @@
     (progn
         (setq doom-modeline-buffer-file-name-style 'buffer-name)
         (setq doom-modeline-icon (display-graphic-p))
-        (setq doom-modeline-major-mode-icon t)
-        (setq doom-modeline-minor-modes t)
+        (jetq doom-modeline-major-mode-icon t)
+        ;;(setq doom-modeline-minor-modes t)
         )
     )
 
