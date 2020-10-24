@@ -503,10 +503,14 @@ If you are unsure, try setting them in `dotspacemacs/user-config' first."
 
     (setq byte-compile-warnings '(cl-functions))
 
-    ;;(setq url-proxy-services
-    ;;    '(("no_proxy" . "^\\(localhost\\|10\\..*\\|192\\.168\\..*\\)")
-    ;;         ("http" . "127.0.0.1:1087")
-    ;;         ("https" . "127.0.0.1:1087")))
+    (when (spacemacs/system-is-mac)
+        (setq dired-use-ls-dired nil)
+        )
+
+    (setq url-proxy-services
+        '(("no_proxy" . "^\\(localhost\\|10\\..*\\|192\\.168\\..*\\)")
+             ("http" . "127.0.0.1:1087")
+             ("https" . "127.0.0.1:1087")))
 
     ;;custom.el
     (setq custom-file (expand-file-name "custom.el" dotspacemacs-directory))

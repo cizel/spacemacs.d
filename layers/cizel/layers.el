@@ -10,7 +10,7 @@
 ;;; License: GPLv3
 
 (configuration-layer/declare-layers '(
-                                         cizel-defaults
+                                         cizel-ui
                                          cizel-misc
                                          cizel-org
                                          cizel-programming
