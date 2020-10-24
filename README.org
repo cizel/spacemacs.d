@@ -1,19 +1,19 @@
 * Cizel personal emacs configuration
   
   Hacking journey begins start from 2020.10.
-  
+
   It was written for Emacs 25.1+ on MacOS 10.11+
 
 ** TODOs
    
-   - review git layer
-   - review org layer
-   - review emacs-lisp layer
-   - review shell layer
-   - review restclient layer
-   - setting frontend development environment(React layer, HTML layer, Javascript layer, Typescript layer)
-   - setting python layer
-   - setting shell script layer
+*** TODO review git layer
+*** TODO review org layer
+*** TODO review emacs-lisp layer
+*** TODO review shell layer
+*** TODO review restclient layer
+*** TODO setting frontend development environment(React layer, HTML layer, Javascript layer, Typescript layer)
+*** TODO setting python layer
+*** TODO setting shell script layer
 
 
 ** My Editor Workflow
