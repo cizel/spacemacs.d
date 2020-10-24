@@ -1,12 +1,16 @@
-* Cizel Spacemacs Config
+* Cizel personal emacs configuration
+  
+  Hacking journey begins start from 2020.10.
+  
+  It was written for Emacs 25.1+ on MacOS 10.11+
 
 ** TODOs
+   
    - review git layer
    - review org layer
    - review emacs-lisp layer
 
 ** My Editor Workflow
-
 *** Emoji 
     
     | 操作       | 快捷键    |
