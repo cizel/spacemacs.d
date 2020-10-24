@@ -12,7 +12,6 @@
 (defconst cizel-misc-packages
     '(
          easy-hugo
-         ox-hugo
          ))
 
 (defun cizel-misc/init-easy-hugo ()
@@ -46,10 +45,4 @@
         (progn
             (setq easy-hugo-basedir "~/work/.private/code/cizel-blog")
             (evil-make-overriding-map easy-hugo-mode-map 'normal))))
-
-(defun cizel-misc/post-init-ox-hugo()
-    (use-package ox-hugo
-        :ensure t
-        :after ox))
-
 ;;; packages.el ends here

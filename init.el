@@ -62,8 +62,12 @@ This function should only modify configuration layer settings."
                  shell-default-position 'bottom
                  shell-default-height 30
                  )
+             restclient
+
+             ;;reading
 
              ;;language
+             shell-scripts
              (markdown :variables markdown-live-preview-engine 'vmd)
              (org :variables
                  org-enable-bootstrap-support t
@@ -73,6 +77,7 @@ This function should only modify configuration layer settings."
              lua
              php
              (java :variables java-backend 'lsp)
+             (python :variables python-backend 'lsp python-lsp-server 'mspyls)
              ;; personal
              cizel)
 
@@ -93,7 +98,7 @@ This function should only modify configuration layer settings."
         ;; A list of packages that will not be installed and loaded.
         dotspacemacs-excluded-packages
         '(
-             spacemacs excluded package
+             ;;spacemacs excluded package
              org-projectile org-brain magit-gh-pulls magit-gitflow  evil-mc realgud tern company-tern
              evil-args evil-ediff evil-exchange evil-unimpaired
              evil-indent-plus volatile-highlights smartparens

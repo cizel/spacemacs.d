@@ -6,14 +6,17 @@
 
 ** TODOs
    
-*** TODO review git layer
-*** TODO review org layer
-*** TODO review emacs-lisp layer
-*** TODO review shell layer
-*** TODO review restclient layer
-*** TODO setting frontend development environment(React layer, HTML layer, Javascript layer, Typescript layer)
-*** TODO setting python layer
-*** TODO setting shell script layer
+- DONE review git layer
+- DONE review org layer
+- DONE review emacs-lisp layer
+- DONE review shell layer
+- DONE review restclient layer
+- DONE setting shell script layer
+- TODO setting python layer
+- TODO setting frontend development environment(React layer, HTML layer, Javascript layer, Typescript layer)
+- TODO learn how to use edebug
+- TODO learn how to use ox-hugo (init writing workflow)
+- TODO learn how to use org-mode 
 
 
 ** My Editor Workflow
@@ -26,4 +29,12 @@
     
    | 操作             | 快捷键     |
    | 当前目录创建文件 | =<SPC> ff= |
+
+*** Magit
+    
+   | 操作         | 快捷键  |
+   | 查看文件变动 | =<TAB>= |
+   | 查看提交日志 | =ll=    |
+   | commit 操作  | =cc=    |
+   | 切换分支     | =bb=    |
 
