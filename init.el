@@ -42,7 +42,7 @@ This function should only modify configuration layer settings."
              (ivy :variables ivy-enable-advanced-buffer-information nil)
              (ibuffer :variables ibuffer-group-buffers-by 'projects)
              emoji
-             ;;colors
+             osx
              (spell-checking :variables spell-checking-enable-by-default nil)
              (syntax-checking :variables syntax-checking-enable-by-default nil
                  syntax-checking-enable-tooltips nil)

@@ -20,7 +20,7 @@
     (progn
         (setq doom-modeline-buffer-file-name-style 'buffer-name)
         (setq doom-modeline-icon (display-graphic-p))
-        (jetq doom-modeline-major-mode-icon t)
+        (setq doom-modeline-major-mode-icon t)
         ;;(setq doom-modeline-minor-modes t)
         )
     )
@@ -28,11 +28,11 @@
 (defun cizel-ui/init-valign ()
     (use-package valign
         :ensure t
-        :config
-        (progn
-            (add-hook 'org-mode-hook #'valign-mode)
-            (add-hook 'markdown-mode-hook #'valign-mode)
-            )
+        ;:config
+        ;(progn
+        ;    (add-hook 'org-mode-hook #'valign-mode)
+        ;    (add-hook 'markdown-mode-hook #'valign-mode)
+        ;    )
         )
     )
 

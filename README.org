@@ -9,6 +9,12 @@
    - review git layer
    - review org layer
    - review emacs-lisp layer
+   - review shell layer
+   - review restclient layer
+   - setting frontend development environment(React layer, HTML layer, Javascript layer, Typescript layer)
+   - setting python layer
+   - setting shell script layer
+
 
 ** My Editor Workflow
 *** Emoji 
