@@ -4,7 +4,7 @@
 
   It was written for Emacs 25.1+ on MacOS 10.11+
 
-** TODOs
+** TODOs  
    
    + [X] review git layer
    + [X] review org layer
@@ -13,11 +13,11 @@
    + [X] review restclient layer
    + [X] setting shell script layer
    + [X] setting python layer
+   + [X] review spacemacs documentation
    + [ ] setting frontend development environment(React layer, HTML layer, Javascript layer, Typescript layer)
    + [ ] learn how to use edebug
    + [ ] learn how to use ox-hugo (init writing workflow)
-   + [ ] learn how to use org-mode 
-
+   + [ ] learn how to use org-mode [[http://fuzihao.org/blog/2015/02/19/org-mode%E6%95%99%E7%A8%8B/]] 
 
 ** My Editor Workflow
    
