@@ -37,8 +37,6 @@ This function should only modify configuration layer settings."
              ;; Uncomment some layer names and press `SPC f e R' (Vim style) or
              ;; `M-m f e R' (Emacs style) to install them.
              ;; ----------------------------------------------------------------
-             (chinese :variables chinese-enable-fcitx t
-                 chinese-enable-youdao-dict t)
              (ivy :variables ivy-enable-advanced-buffer-information nil)
              (ibuffer :variables ibuffer-group-buffers-by 'projects)
              emoji
@@ -63,6 +61,8 @@ This function should only modify configuration layer settings."
                  shell-default-height 30
                  )
              restclient
+             (treemacs :variables treemacs-use-all-the-icons-theme t
+                 treemacs-collapse-dirs 5)
 
              ;;reading
 

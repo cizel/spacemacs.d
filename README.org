@@ -6,20 +6,21 @@
 
 ** TODOs
    
-- DONE review git layer
-- DONE review org layer
-- DONE review emacs-lisp layer
-- DONE review shell layer
-- DONE review restclient layer
-- DONE setting shell script layer
-- TODO setting python layer
-- TODO setting frontend development environment(React layer, HTML layer, Javascript layer, Typescript layer)
-- TODO learn how to use edebug
-- TODO learn how to use ox-hugo (init writing workflow)
-- TODO learn how to use org-mode 
+   + [X] review git layer
+   + [X] review org layer
+   + [X] review emacs-lisp layer
+   + [X] review shell layer
+   + [X] review restclient layer
+   + [X] setting shell script layer
+   + [X] setting python layer
+   + [ ] setting frontend development environment(React layer, HTML layer, Javascript layer, Typescript layer)
+   + [ ] learn how to use edebug
+   + [ ] learn how to use ox-hugo (init writing workflow)
+   + [ ] learn how to use org-mode 
 
 
 ** My Editor Workflow
+   
 *** Emoji 
     
     | 操作       | 快捷键    |
@@ -37,4 +38,3 @@
    | 查看提交日志 | =ll=    |
    | commit 操作  | =cc=    |
    | 切换分支     | =bb=    |
-
