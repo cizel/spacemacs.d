@@ -37,13 +37,15 @@ This function should only modify configuration layer settings."
              ;; Uncomment some layer names and press `SPC f e R' (Vim style) or
              ;; `M-m f e R' (Emacs style) to install them.
              ;; ----------------------------------------------------------------
-             (ivy :variables ivy-enable-advanced-buffer-information nil)
+             (ivy :variables ivy-enable-advanced-buffer-information nil
+                 ivy-use-virtual-buffers nil
+                 ivy-height 16)
              (ibuffer :variables ibuffer-group-buffers-by 'projects)
              emoji
              osx
              (spell-checking :variables spell-checking-enable-by-default nil)
-             (syntax-checking :variables syntax-checking-enable-by-default nil
-                 syntax-checking-enable-tooltips nil)
+             (syntax-checking :variables syntax-checking-enable-by-default t
+                 syntax-checking-enable-tooltips t)
              (git :variables
                  git-magit-status-fullscreen t
                  magit-push-always-verify nil
@@ -62,9 +64,10 @@ This function should only modify configuration layer settings."
                  )
              restclient
              (treemacs :variables treemacs-use-all-the-icons-theme t
-                 treemacs-collapse-dirs 5)
-
-             ;;reading
+                 treemacs-use-follow-mode t
+                 treemacs-use-filewatch-mode t
+                 treemacs-lock-width t
+                 treemacs-collapse-dirs 8)
 
              ;;language
              shell-scripts
@@ -75,11 +78,11 @@ This function should only modify configuration layer settings."
              (yaml :variables yaml-enable-lsp t)
              emacs-lisp
              lua
-             php
+             (php :variables php-backend 'lsp)
              (java :variables java-backend 'lsp)
              (python :variables python-backend 'lsp python-lsp-server 'mspyls)
              ;; personal
-             cizel)
+             cizel-default)
 
         ;; List of additional packages that will be installed without being
         ;; wrapped in a layer. If you need some configuration for these
@@ -206,7 +209,7 @@ It should only modify the values of Spacemacs settings."
         ;; directory. A string value must be a path to an image format supported
         ;; by your Emacs build.
         ;; If the value is nil then no banner is displayed. (default 'official)
-        dotspacemacs-startup-banner 'official
+        dotspacemacs-startup-banner nil
 
         ;; List of items to show in startup buffer or an association list of
         ;; the form `(list-type . list-size)`. If nil then it is disabled.
@@ -431,7 +434,7 @@ It should only modify the values of Spacemacs settings."
 
         ;; If non-nil, start an Emacs server if one is not already running.
         ;; (default nil)
-        dotspacemacs-enable-server nil
+        dotspacemacs-enable-server t
 
         ;; Set the emacs server socket location.
         ;; If nil, uses whatever the Emacs default is, otherwise a directory path

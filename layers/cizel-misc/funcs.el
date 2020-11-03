@@ -1,4 +1,4 @@
-;;; funcs.el --- cizel-misc layer packages file for Spacemacs.
+;;; funcs.el --- cizel-misc layer pckages file for Spacemacs.
 ;;
 ;; Copyright (c) 2012-2020 Sylvain Benner & Contributors
 ;;
@@ -9,7 +9,27 @@
 ;;
 ;;; License: GPLv3
 
-(defun md-insert-image ()
+(defun cizel/write-md-translate()
+    "insert a table translate"
+    (interactive)
+    (let ((result))
+        (progn
+            (with-temp-buffer
+                (clipboard-yank)
+                (setq word (buffer-string)))
+            (youdao-dictionary-search word)
+            (switch-to-buffer-other-window "*Youdao Dictionary*")
+            (setq result (buffer-string))
+            (other-window 1)
+            (string-match "- .*" result)
+            (setq result (match-string 0 result))
+            (next-line)
+            (insert (format "| `%s` | %s |" word result))
+            )))
+
+
+
+(defun cizel/md-insert-image ()
     "insert a image from clipboard"
     (interactive)
     (let* (

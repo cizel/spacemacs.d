@@ -20,5 +20,10 @@
         (message "line=%s" line)
         ))
 
+(defun sum(a b)
+    ;;function => interactive command (设置成可执行的命令)
+    (interactive)
+    (message "a: %s, b: %s" a b)
+    (message "a+b: %s" (+ a b)))
 
 ;;; funcs.el ends here

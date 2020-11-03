@@ -15,16 +15,6 @@
          lsp-java
          ))
 
-(defun cizel-programming/post-init-lsp-mode ()
-    (progn
-
-        (setq lsp-ui-doc-enable nil)
-        (setq lsp-enable-file-watchers nil)
-        (setq lsp-modeline-code-actions-enable nil)
-        (setq lsp-ui-sideline-show-code-actions nil)
-        (setq lsp-auto-configure t)
-        (setq lsp-prefer-flymake nil)))
-
 (defun cizel-programming/post-init-lsp-java ()
     (progn
 
@@ -37,5 +27,15 @@
                  "-XX:+UseStringDeduplication"
                  "-noverify"
                  ,(concat "-javaagent:" path-to-lombok)))))
+
+(defun cizel-programming/post-init-lsp-mode ()
+    (progn
+
+        (setq lsp-ui-doc-enable nil)
+        (setq lsp-enable-file-watchers nil)
+        (setq lsp-modeline-code-actions-enable nil)
+        (setq lsp-ui-sideline-show-code-actions nil)
+        (setq lsp-auto-configure t)
+        (setq lsp-prefer-flymake nil)))
 
 ;;; packages.el ends here

@@ -10,13 +10,14 @@
 ;;; License: GPLv3
 
 ;; Setting emacs border
-(set-frame-parameter nil 'internal-border-width 20)
+(set-frame-parameter nil 'internal-border-width 10)
 
 ;; Setting font line height
 (defun set-bigger-spacing ()
     (setq-local default-text-properties '(line-spacing 0.1 line-height 1.5 )))
 
 (add-hook 'text-mode-hook 'set-bigger-spacing)
+(add-hook 'spacemacs-buffer-mode-hook 'set-bigger-spacing)
 (add-hook 'prog-mode-hook 'set-bigger-spacing)
 
 ;; Setting  default font

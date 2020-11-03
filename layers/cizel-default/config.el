@@ -9,6 +9,7 @@
 ;;
 ;;; License: GPLv3
 
+(setq vc-follow-symlinks t)
 
 ;;; config.el ends here
 

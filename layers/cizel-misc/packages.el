@@ -13,7 +13,31 @@
     '(
          easy-hugo
          sis
+         youdao-dictionary
          ))
+
+(defun cizel-misc/init-youdao-dictionary()
+    (use-package youdao-dictionary
+        :ensure t
+        :bind
+        (("C-c w" . youdao-dictionary-search-at-point-posframe))
+        ))
+
+(defun cizel-misc/init-sis()
+    (use-package sis
+        :ensure t
+        :config
+        (sis-ism-lazyman-config
+            "com.apple.keylayout.US"
+            "im.rime.inputmethod.Squirrel.Rime")
+        ;; enable the /cursor color/ mode
+        (sis-global-cursor-color-mode t)
+        ;; enable the /respect/ mode
+        (sis-global-respect-mode t)
+        ;; enable the /follow context/ mode for all buffers
+        (sis-global-follow-context-mode t)
+        ;; enable the /inline english/ mode for all buffers
+        (sis-global-inline-mode t)))
 
 (defun cizel-misc/init-easy-hugo ()
     (use-package easy-hugo
@@ -48,20 +72,5 @@
             (evil-make-overriding-map easy-hugo-mode-map 'normal))))
 
 
-(defun cizel-misc/init-sis()
-    (use-package sis
-        :ensure t
-        :config
-        (sis-ism-lazyman-config
-        "com.apple.keylayout.US"
-        "im.rime.inputmethod.Squirrel.Rime")
-        ;; enable the /cursor color/ mode
-        (sis-global-cursor-color-mode t)
-        ;; enable the /respect/ mode
-        (sis-global-respect-mode t)
-        ;; enable the /follow context/ mode for all buffers
-        (sis-global-follow-context-mode t)
-        ;; enable the /inline english/ mode for all buffers
-        (sis-global-inline-mode t)))
 
 ;;; packages.el ends here
