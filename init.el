@@ -37,6 +37,7 @@ This function should only modify configuration layer settings."
              ;; Uncomment some layer names and press `SPC f e R' (Vim style) or
              ;; `M-m f e R' (Emacs style) to install them.
              ;; ----------------------------------------------------------------
+             (chinese)
              (ivy :variables ivy-enable-advanced-buffer-information nil
                  ivy-use-virtual-buffers nil
                  ivy-height 16)
@@ -105,8 +106,8 @@ This function should only modify configuration layer settings."
              org-projectile org-brain magit-gh-pulls magit-gitflow  evil-mc realgud tern company-tern
              evil-args evil-ediff evil-exchange evil-unimpaired
              evil-indent-plus volatile-highlights smartparens
-             spaceline holy-mode skewer-mode rainbow-delimiters
-             highlight-indentation vi-tilde-fringe eyebrowse ws-butler
+             holy-mode skewer-mode rainbow-delimiters
+             spaceline highlight-indentation vi-tilde-fringe eyebrowse ws-butler
              smooth-scrolling org-repo-todo org-download org-timer
              livid-mode git-gutter git-gutter-fringe  evil-escape
              leuven-theme gh-md evil-lisp-state spray lorem-ipsum symon

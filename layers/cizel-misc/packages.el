@@ -16,7 +16,7 @@
          youdao-dictionary
          ))
 
-(defun cizel-misc/init-youdao-dictionary()
+(defun cizel-misc/post-init-youdao-dictionary()
     (use-package youdao-dictionary
         :ensure t
         :bind
