@@ -35,6 +35,7 @@
         (setq lsp-enable-file-watchers nil)
         (setq lsp-modeline-code-actions-enable nil)
         (setq lsp-ui-sideline-show-code-actions nil)
+        (setq lsp-modeline-diagnostics-enable nil)
         (setq lsp-auto-configure t)
         (setq lsp-prefer-flymake nil)))
 

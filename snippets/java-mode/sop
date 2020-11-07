@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# key: sop
+# name: System.out.println
+# --
+System.out.println("", $1);

@@ -16,17 +16,15 @@
          )
     )
 
-(defun cizel-ui/post-init-doom-modeline ()
-    (progn
-        (setq doom-modeline-buffer-file-name-style 'buffer-name)
-        (setq doom-modeline-icon (display-graphic-p))
-        (setq doom-modeline-major-mode-icon t)
-        ))
-
 (defun cizel-ui/init-valign ()
     (use-package valign
         :ensure t))
 
+(defun cizel-ui/post-init-doom-modeline ()
+    (progn
+        (setq doom-modeline-buffer-file-name-style 'buffer-name)
+        (setq doom-modeline-indent-info t)
+        ))
 
 
 ;;; packages.el ends here

@@ -12,6 +12,7 @@
 ;; js-mode configuration
 (add-to-list 'auto-mode-alist '("views.*\\.php\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.js\\'" . js2-mode))
+(add-to-list 'auto-mode-alist '("\\.jsx\\'" . typescript-mode))
 
 
 ;;; config.el ends here

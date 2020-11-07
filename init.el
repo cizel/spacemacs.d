@@ -38,14 +38,17 @@ This function should only modify configuration layer settings."
              ;; `M-m f e R' (Emacs style) to install them.
              ;; ----------------------------------------------------------------
              (chinese)
-             (ivy :variables ivy-enable-advanced-buffer-information nil
+             (ivy :variables
+                 ivy-enable-advanced-buffer-information nil
                  ivy-use-virtual-buffers nil
                  ivy-height 16)
-             (ibuffer :variables ibuffer-group-buffers-by 'projects)
-             emoji
+             (ibuffer :variables
+                 ibuffer-group-buffers-by 'projects)
              osx
-             (spell-checking :variables spell-checking-enable-by-default nil)
-             (syntax-checking :variables syntax-checking-enable-by-default t
+             (spell-checking :variables
+                 spell-checking-enable-by-default nil)
+             (syntax-checking :variables
+                 syntax-checking-enable-by-default t
                  syntax-checking-enable-tooltips t)
              (git :variables
                  git-magit-status-fullscreen t
@@ -54,34 +57,52 @@ This function should only modify configuration layer settings."
                  magit-revert-buffers 'silent
                  magit-refs-show-commit-count 'all
                  magit-revision-show-gravatars nil)
-             (auto-completion :variables auto-completion-enable-sort-by-usage t
+             (auto-completion :variables
+                 auto-completion-enable-sort-by-usage t
                  auto-completion-enable-snippets-in-popup t
+                 auto-completion-return-key-behavior 'complete
                  auto-completion-tab-key-behavior 'cycle
                  :disabled-for org markdown)
              (gtags :disabled-for emacs-lisp java javascript latex python shell-scripts)
-             (shell :variables shell-default-shell 'ansi-term
+             (shell :variables
+                 shell-default-shell 'ansi-term
                  shell-default-position 'bottom
                  shell-default-height 30
                  )
              restclient
-             (treemacs :variables treemacs-use-all-the-icons-theme t
+             (treemacs :variables
+                 treemacs-use-all-the-icons-theme t
                  treemacs-use-follow-mode t
                  treemacs-use-filewatch-mode t
                  treemacs-lock-width t
-                 treemacs-collapse-dirs 8)
+                 treemacs-collapse-dirs 5)
 
              ;;language
              shell-scripts
-             (markdown :variables markdown-live-preview-engine 'vmd)
+             (markdown :variables
+                 markdown-live-preview-engine 'vmd)
              (org :variables
                  org-enable-bootstrap-support t
                  org-enable-hugo-support t)
-             (yaml :variables yaml-enable-lsp t)
+             (yaml :variables
+                 yaml-enable-lsp t)
              emacs-lisp
              lua
-             (php :variables php-backend 'lsp)
-             (java :variables java-backend 'lsp)
-             (python :variables python-backend 'lsp python-lsp-server 'mspyls)
+             (php :variables
+                 php-backend 'lsp)
+             (java :variables
+                 java-backend 'lsp)
+             (python :variables
+                 python-backend 'lsp
+                 python-lsp-server 'mspyls)
+             (javascript :variables
+                 javascript-backend 'lsp
+                 js2-mode-show-strict-warnings nil
+                 javascript-import-tool 'import-js)
+             (typescript :variables
+                 typescript-fmt-tool 'prettier
+                 typescript-linter 'eslint)
+             (html :variables web-fmt-tool 'prettier)
              ;; personal
              cizel-default)
 
@@ -107,7 +128,7 @@ This function should only modify configuration layer settings."
              evil-args evil-ediff evil-exchange evil-unimpaired
              evil-indent-plus volatile-highlights smartparens
              holy-mode skewer-mode rainbow-delimiters
-             spaceline highlight-indentation vi-tilde-fringe eyebrowse ws-butler
+             highlight-indentation vi-tilde-fringe eyebrowse ws-butler
              smooth-scrolling org-repo-todo org-download org-timer
              livid-mode git-gutter git-gutter-fringe  evil-escape
              leuven-theme gh-md evil-lisp-state spray lorem-ipsum symon
@@ -118,7 +139,7 @@ This function should only modify configuration layer settings."
              helm-c-yasnippet ace-jump-helm-line helm-make magithub
              helm-themes helm-swoop helm-spacemacs-help smeargle
              ido-vertical-mode flx-ido company-quickhelp ivy-rich helm-purpose pyim
-             meghanada drupal-mode php-auto-yasnippets php-extras phpunit mmm-mode
+             meghanada phpunit mmm-mode
              )
 
         ;; Defines the behaviour of Spacemacs when installing packages.

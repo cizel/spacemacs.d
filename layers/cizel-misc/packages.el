@@ -34,8 +34,6 @@
         (sis-global-cursor-color-mode t)
         ;; enable the /respect/ mode
         (sis-global-respect-mode t)
-        ;; enable the /follow context/ mode for all buffers
-        (sis-global-follow-context-mode t)
         ;; enable the /inline english/ mode for all buffers
         (sis-global-inline-mode t)))
 
