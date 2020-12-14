@@ -73,8 +73,6 @@ This function should only modify configuration layer settings."
              (treemacs :variables
                  treemacs-use-all-the-icons-theme t
                  treemacs-use-follow-mode t
-                 treemacs-use-filewatch-mode t
-                 treemacs-lock-width t
                  treemacs-collapse-dirs 5)
 
              ;;language
@@ -96,13 +94,17 @@ This function should only modify configuration layer settings."
                  python-backend 'lsp
                  python-lsp-server 'mspyls)
              (javascript :variables
+                 js2-basic-offset 4
+                 js-indent-level 4
                  javascript-backend 'lsp
                  js2-mode-show-strict-warnings nil
-                 javascript-import-tool 'import-js)
+                 javascript-import-tool 'import-js
+                 javaescript-fmt-tool 'prettier)
              (typescript :variables
                  typescript-fmt-tool 'prettier
                  typescript-linter 'eslint)
              (html :variables web-fmt-tool 'prettier)
+             react
              ;; personal
              cizel-default)
 
@@ -260,9 +262,9 @@ It should only modify the values of Spacemacs settings."
         ;; List of themes, the first of the list is loaded when spacemacs starts.
         ;; Press `SPC T n' to cycle to the next theme in the list (works great
         ;; with 2 themes variants, one dark and one light)
-        dotspacemacs-themes '(doom-one
-                                 spacemacs-dark
-                                 spacemacs-light)
+        dotspacemacs-themes '(;;doom-one-light
+                                 doom-one
+                                 )
 
         ;; Set the theme for the Spaceline. Supported themes are `spacemacs',
         ;; `all-the-icons', `custom', `doom', `vim-powerline' and `vanilla'. The
@@ -281,6 +283,7 @@ It should only modify the values of Spacemacs settings."
         ;; Default font or prioritized list of fonts.
         dotspacemacs-default-font '("Fira Code"
                                        :size 14
+                                       ;;:weight semi-bold
                                        :weight normal
                                        :width normal
                                        )
@@ -537,14 +540,11 @@ If you are unsure, try setting them in `dotspacemacs/user-config' first."
         (setq dired-use-ls-dired nil)
         )
 
-    (setq url-proxy-services
-        '(("no_proxy" . "^\\(localhost\\|10\\..*\\|192\\.168\\..*\\)")
-             ("http" . "127.0.0.1:1087")
-             ("https" . "127.0.0.1:1087")))
+    ;; (setq url-proxy-services
+    ;;     '(("no_proxy" . "^\\(localhost\\|10\\..*\\|192\\.168\\..*\\)")
+    ;;          ("http" . "127.0.0.1:1087")
+    ;;          ("https" . "127.0.0.1:1087")))
 
-    ;;custom.el
-    (setq custom-file (expand-file-name "custom.el" dotspacemacs-directory))
-    (load custom-file 'no-error 'no-message)
     )
 
 (defun dotspacemacs/user-load ()
@@ -562,6 +562,10 @@ configuration.
 Put your configuration code here, except for variables that should be set
 before packages are loaded."
     )
+
+;;custom.el
+(setq custom-file (expand-file-name "custom.el" dotspacemacs-directory))
+(load custom-file 'no-error 'no-message)
 
 ;; Do not write anything past this comment. This is where Emacs will
 ;; auto-generate custom variable definitions.

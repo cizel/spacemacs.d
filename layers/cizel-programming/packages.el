@@ -6,14 +6,26 @@
 ;; URL: https://github.com/cizel/spacemacs.d
 ;;
 ;; This file is not part of GNU Emacs.
-;;
+;;)
 ;;; License: GPLv3
 
 (defconst cizel-programming-packages
     '(
          lsp-mode
          lsp-java
+         mvn
          ))
+
+(defun cizel-programming/post-init-mvn()
+    (use-package mvn
+        :defer t
+        :init
+        (when (configuration-layer/package-used-p 'java-mode)
+            (spacemacs/set-leader-keys-for-major-mode 'java-mode
+                "mcc" 'cizel/mvn-compile
+                )
+            (add-hook 'compilation-finish-functions 'cizel/kill-compile-buffer-if-successful)
+            )))
 
 (defun cizel-programming/post-init-lsp-java ()
     (progn
