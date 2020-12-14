@@ -12,5 +12,8 @@
 (global-set-key (kbd "C-c a") 'org-agenda)
 (define-key global-map (kbd "C-c t") 'org-capture)
 
+(global-set-key (kbd "s-c") 'kill-ring-save)
+
+(global-set-key (kbd "s-v") 'yank)
 
 ;;; keybindings.el ends here

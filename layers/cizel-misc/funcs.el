@@ -9,6 +9,17 @@
 ;;
 ;;; License: GPLv3
 
+
+
+
+(defun sudo-edit-current-file ()
+  (interactive)
+  (when (buffer-file-name)
+    (let ((old-point (point)))
+      (find-file (concat "/sudo:root@localhost:" (buffer-file-name)))
+      (goto-char old-point))))
+
+
 (defun cizel/write-md-translate()
     "insert a table translate"
     (interactive)

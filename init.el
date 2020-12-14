@@ -68,6 +68,7 @@ This function should only modify configuration layer settings."
                  shell-default-shell 'ansi-term
                  shell-default-position 'bottom
                  shell-default-height 30
+                 shell-default-term-shell "/usr/bin/zsh"
                  )
              restclient
              (treemacs :variables
@@ -97,9 +98,10 @@ This function should only modify configuration layer settings."
                  js2-basic-offset 4
                  js-indent-level 4
                  javascript-backend 'lsp
+                 javascript-fmt-tool 'prettier
                  js2-mode-show-strict-warnings nil
-                 javascript-import-tool 'import-js
-                 javaescript-fmt-tool 'prettier)
+                 javascript-fmt-on-save t
+                 javascript-import-tool 'import-js)
              (typescript :variables
                  typescript-fmt-tool 'prettier
                  typescript-linter 'eslint)
@@ -540,10 +542,10 @@ If you are unsure, try setting them in `dotspacemacs/user-config' first."
         (setq dired-use-ls-dired nil)
         )
 
-    ;; (setq url-proxy-services
-    ;;     '(("no_proxy" . "^\\(localhost\\|10\\..*\\|192\\.168\\..*\\)")
-    ;;          ("http" . "127.0.0.1:1087")
-    ;;          ("https" . "127.0.0.1:1087")))
+    ;;(setq url-proxy-services
+    ;;    '(("no_proxy" . "^\\(localhost\\|10\\..*\\|192\\.168\\..*\\)")
+    ;;         ("http" . "127.0.0.1:1087")
+    ;;         ("https" . "127.0.0.1:1087")))
 
     )
 
@@ -561,6 +563,20 @@ This function is called at the very end of Spacemacs startup, after layer
 configuration.
 Put your configuration code here, except for variables that should be set
 before packages are loaded."
+
+    (setq-default
+        evil-shift-width 4
+        ;; js2-mode
+        js2-basic-offset 4
+        ;; web-mode
+        css-indent-offset 4
+        js-indent-level 4
+        js-indent-align-list-continuation nil
+        c-basic-offset 4
+        web-mode-markup-indent-offset 4
+        web-mode-css-indent-offset 4
+        web-mode-code-indent-offset 4
+        web-mode-attr-indent-offset 4)
     )
 
 ;;custom.el
