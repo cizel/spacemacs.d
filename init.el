@@ -40,7 +40,7 @@ This function should only modify configuration layer settings."
              (chinese)
              (ivy :variables
                  ivy-enable-advanced-buffer-information nil
-                 ivy-use-virtual-buffers nil
+                 ivy-use-virtual-buffers t
                  ivy-height 16)
              (ibuffer :variables
                  ibuffer-group-buffers-by 'projects)
@@ -74,6 +74,8 @@ This function should only modify configuration layer settings."
              (treemacs :variables
                  treemacs-use-all-the-icons-theme t
                  treemacs-use-follow-mode t
+                 treemacs-use-filewatch-mode t
+                 treemacs-use-scope-type 'Perspectives
                  treemacs-collapse-dirs 5)
 
              ;;language

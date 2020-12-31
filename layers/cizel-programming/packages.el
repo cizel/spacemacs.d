@@ -29,6 +29,9 @@
         (spacemacs/set-leader-keys-for-major-mode 'xml-mode
             "mcc" 'cizel/mvn-compile
             )
+        (spacemacs/set-leader-keys-for-major-mode 'yaml-mode
+            "mcc" 'cizel/mvn-compile
+            )
         (add-hook 'compilation-finish-functions 'cizel/kill-compile-buffer-if-successful)
             ))
 
